@@ -1,0 +1,62 @@
+[
+  {
+    "firstName": "Vraj",
+    "lastName": "Patel",
+    "password": "VrajIsStupid",
+    "favoriteCards": [
+      1,
+      4,
+      7
+    ],
+    "currency": 1050.0,
+    "lastClaimedCurrencyTime": "2024-06-02T05:06:31.731Z",
+    "userName": "VrajTPatel",
+    "email": "VrajLOL.doe@example.com",
+    "ownedCards": [
+      6,
+      25,
+      150
+    ],
+    "uniqueIdentifier": "18825fe2-d5a9-4e1f-8442-44d5fcd079cc"
+  },
+  {
+    "firstName": "Thane",
+    "lastName": "Tiffany",
+    "password": "ThaneIsSmart",
+    "favoriteCards": [
+      150,
+      100,
+      25
+    ],
+    "currency": 1000.0,
+    "lastClaimedCurrencyTime": "2023-05-25T10:00:00Z",
+    "userName": "ThaneTiff",
+    "email": "ThaneLMAO.doe@example.com",
+    "ownedCards": [
+      25,
+      101,
+      3
+    ],
+    "uniqueIdentifier": "82176df3-5ac2-4cc1-b2e5-8cf0b486fee6"
+  },
+  {
+    "firstName": "TestP",
+    "lastName": "Test",
+    "password": "TestP",
+    "favoriteCards": [],
+    "currency": 20.0,
+    "lastClaimedCurrencyTime": "2024-06-04T21:29:40.288Z",
+    "userName": "Test",
+    "email": "Test@email.test.com",
+    "ownedCards": [
+      4,
+      62,
+      41,
+      14,
+      86,
+      22,
+      28
+    ],
+    "uniqueIdentifier": "6deb3034-5701-4a43-8114-b053564c8b47"
+  }
+]
