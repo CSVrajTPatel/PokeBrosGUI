@@ -54,9 +54,9 @@ public class UserList {
      * @return the User object if login successful, null otherwise.
      */
     public User loginUser(String userName, String password) {
+        getInstance();
         for (User user : userList) {
             if (user.getUserName().equalsIgnoreCase(userName) && user.getPassword().equals(password)) {
-                getInstance();
                 DataLoader.loadTrades();
                 return user;
             }
