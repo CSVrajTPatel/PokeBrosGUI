@@ -27,7 +27,7 @@ public class PrimaryController {
 
         System.out.println("Username is " + username);
 
-        Facade facade = new Facade(username, password);
+        Facade facade = Facade.getInstance(username, password);
         
         User userCheck = facade.getUser();
         if (userCheck == null) {
