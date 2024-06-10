@@ -18,7 +18,7 @@ public class Card {
 /*
  * Default constructor for the card class.
  */
-    public Card() { 
+    public Card() {
         id = 0;
         name = "wow";
         type = "dang";
