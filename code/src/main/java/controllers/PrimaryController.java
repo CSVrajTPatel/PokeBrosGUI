@@ -3,6 +3,7 @@ package controllers;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import model.Facade;
 import model.User;
@@ -18,8 +19,8 @@ public class PrimaryController {
     @FXML
     private TextField txtUsername;
 
-    //@FXML
-    //private Label lbl_error;
+    @FXML
+    private Label lbl_error;
 
     @FXML
     void login(ActionEvent event) {
@@ -33,7 +34,7 @@ public class PrimaryController {
         User userCheck = facade.getUser();
         if (userCheck == null) {
             System.out.println("Invalid Username");
-            //lbl_error.setText("Invalid login credentials.");
+            lbl_error.setText("Invalid login credentials.");
             return;
         }
         System.out.println("WOOHOOO");

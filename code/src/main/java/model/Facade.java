@@ -11,6 +11,10 @@ public class Facade {
     return facade;
   }
 
+  public static Facade getInstance() {
+    return facade;
+  }
+
   private Facade(String username, String password) {
     user = loginUser(username, password);
   }

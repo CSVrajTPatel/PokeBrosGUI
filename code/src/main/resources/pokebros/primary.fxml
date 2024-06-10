@@ -11,6 +11,7 @@
    <children>
       <Label text="Login" textAlignment="CENTER" />
       <Label text="Username" textAlignment="CENTER" />
+      <Label text="" fx:id="lbl_error" />
       <TextField fx:id="txtUsername" />
       <Label text="Password" textAlignment="CENTER" />
       <TextField fx:id="txtPass" />
