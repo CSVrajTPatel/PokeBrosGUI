@@ -13,9 +13,9 @@ import org.json.simple.parser.ParseException;
  * The DataLoader class provides methods to load the data from the Cards,Users, and trades JSON files.
  */
 public class DataLoader {
-    private static final String CARDS_FILE_PATH = "json/cards.json";
-    private static final String USERS_FILE_PATH = "json/users.json";
-    private static final String TRADES_FILE_PATH = "json/trades.json";
+    private static final String CARDS_FILE_PATH = "code/src/main/java/data/cards.json";
+    private static final String USERS_FILE_PATH = "code/src/main/java/data/users.json";
+    private static final String TRADES_FILE_PATH = "code/src/main/java/data/trades.json";
 
     /**
      * Loads cards from the Card.JSON file.
