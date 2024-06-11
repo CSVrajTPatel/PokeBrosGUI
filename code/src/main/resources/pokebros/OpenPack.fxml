@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1294.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0">
+         <children>
+            <ImageView cache="true" cacheHint="QUALITY" fitHeight="731.0" fitWidth="1288.0" layoutX="-8.0" layoutY="-11.0">
+               <image>
+                  <Image url="@Images/Background.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="689.0" layoutX="14.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 55; -fx-arc-width: 55;" width="1247.0" />
+            <ImageView fitHeight="59.0" fitWidth="244.0" layoutX="24.0" layoutY="28.0">
+               <image>
+                  <Image url="@Images/PokeBros%20Logo.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="200.0" layoutY="108.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: transparent;" text="My Collection">
+               <font>
+                  <Font name="Gill Sans MT" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="switchSC" layoutX="450.0" layoutY="108.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: transparent;" text="Search Cards">
+               <font>
+                  <Font name="Gill Sans MT" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="switchP" layoutX="701.0" layoutY="108.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: transparent;" text="Packs" textFill="#1b00ea">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="switchT" layoutX="951.0" layoutY="108.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: transparent;" text="Trade">
+               <font>
+                  <Font name="Gill Sans MT" size="12.0" />
+               </font>
+            </Button>
+            <Line endX="1068.6666259765625" endY="-6.666664123535156" layoutX="156.0" layoutY="97.0" startX="-100.00001525878906" startY="-6.666664123535156" />
+            <Line endX="-125.50001525878906" endY="-40.16667175292969" layoutX="181.0" layoutY="171.0" startX="-125.50001525878906" startY="-80.16666412353516" />
+            <Line endX="-125.8333740234375" endY="-41.16667175292969" layoutX="1351.0" layoutY="171.0" startX="-125.50001525878906" startY="-80.16666412353516" />
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="493.0" layoutY="92.0" opacity="0.71">
+               <image>
+                  <Image url="@Images/cards%20icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="24.0" layoutX="244.0" layoutY="91.0">
+               <image>
+                  <Image url="@Images/collection.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="36.0" layoutX="739.0" layoutY="86.0">
+               <image>
+                  <Image url="@Images/pack%20icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="18.0" fitWidth="16.0" layoutX="998.0" layoutY="95.0">
+               <image>
+                  <Image url="@Images/trade%20icon.png" />
+               </image>
+            </ImageView>
+            <Line endX="1068.6666259765625" endY="-6.666664123535156" layoutX="156.0" layoutY="137.0" startX="-100.00001525878906" startY="-6.666664123535156" />
+            <ImageView fitHeight="27.0" fitWidth="24.0" layoutX="1079.0" layoutY="24.0">
+               <image>
+                  <Image url="@Images/user%20icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="21.0" layoutX="1081.0" layoutY="53.0">
+               <image>
+                  <Image url="@Images/currency%20icon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="1104.0" layoutY="23.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

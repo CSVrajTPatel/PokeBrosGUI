@@ -46,7 +46,11 @@
          </font>
       </Text>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="32.0" layoutX="417.0" layoutY="447.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="441.0" />
+<<<<<<< HEAD
       <Button fx:id="Login" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="425.0" layoutY="448.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="427.0" scaleShape="false" style="-fx-background-color: transparent;" text="Login" textFill="#fdfdfd">
+=======
+      <Button fx:id="login" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="425.0" layoutY="448.0" mnemonicParsing="false" onAction="#login" prefHeight="30.0" prefWidth="427.0" scaleShape="false" style="-fx-background-color: transparent;" text="Login" textFill="#fdfdfd">
+>>>>>>> 858670c72ddb7c12aba9c9bfd55c0ad15705cfc2
          <font>
             <Font name="Gill Sans MT Bold" size="10.0" />
          </font>
