@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="434.0" fitWidth="655.0" layoutX="-2.0" layoutY="-5.0">
+         <image>
+            <Image url="@Images/Background.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="397.0" layoutX="17.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 55; -fx-arc-width: 55;" width="614.0" />
+      <ToolBar layoutX="30.0" layoutY="22.0" prefHeight="90.0" prefWidth="592.0">
+        <items>
+            <ImageView fitHeight="71.0" fitWidth="164.0">
+               <image>
+                  <Image url="@Images/PokeBros%20Logo.png" />
+               </image>
+            </ImageView>
+            <Separator orientation="VERTICAL" prefHeight="34.0" prefWidth="12.0" visible="false" />
+          <Button fx:id="MyCollection" mnemonicParsing="false" text="My Collection" />
+            <Separator orientation="VERTICAL" prefHeight="34.0" prefWidth="12.0" visible="false" />
+            <Button fx:id="SearchCards" mnemonicParsing="false" text="Search Cards" />
+            <Separator orientation="VERTICAL" prefHeight="34.0" prefWidth="12.0" visible="false" />
+            <Button fx:id="Packs" mnemonicParsing="false" text="Packs" />
+            <Separator orientation="VERTICAL" prefHeight="34.0" prefWidth="12.0" visible="false" />
+            <Button fx:id="Trade" mnemonicParsing="false" text="Trade" />
+        </items>
+      </ToolBar>
+   </children>
+</AnchorPane>
