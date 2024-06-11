@@ -1,20 +1,18 @@
 package controllers;
-    import javafx.fxml.FXML;
-    import javafx.scene.control.Button;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
     
     public class  MyCollectionController {
+
+        @FXML
+        private Button switchP;
     
         @FXML
-        private Button MyCollection;
+        private Button switchSC;
     
         @FXML
-        private Button Packs;
-    
-        @FXML
-        private Button SearchCards;
-    
-        @FXML
-        private Button Trade;
+        private Button switchT;
+        
     
     }
     

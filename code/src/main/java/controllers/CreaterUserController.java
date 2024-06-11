@@ -1,22 +1,26 @@
 package controllers;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
-public class CreaterUserController {    
-        @FXML
-        private TextField UsernameTxt;
-    
-        @FXML
-        private TextField UsernameTxt1;
-    
-        @FXML
-        private TextField UsernameTxt11;
-    
-        @FXML
-        private TextField UsernameTxt12;
-    
-        @FXML
-        private TextField UsernameTxt2;
-    
-    }
-    
+public class CreaterUserController {
+
+    @FXML
+    private Button CreateUser;
+
+    @FXML
+    private TextField email;
+
+    @FXML
+    private TextField firstName;
+
+    @FXML
+    private TextField lastName;
+
+    @FXML
+    private TextField newPassword;
+
+    @FXML
+    private TextField newUsername;
+
+}
