@@ -31,17 +31,17 @@
                   <Font name="Gill Sans MT Bold" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="switchSC" layoutX="450.0" layoutY="108.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: transparent;" text="Search Cards">
+            <Button fx:id="switchSC" layoutX="450.0" layoutY="108.0" mnemonicParsing="false" onAction="#SC" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: transparent;" text="Search Cards">
                <font>
                   <Font name="Gill Sans MT" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="switchP" layoutX="701.0" layoutY="108.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: transparent;" text="Packs">
+            <Button fx:id="switchP" layoutX="701.0" layoutY="108.0" mnemonicParsing="false" onAction="#P" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: transparent;" text="Packs">
                <font>
                   <Font name="Gill Sans MT" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="switchT" layoutX="951.0" layoutY="108.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: transparent;" text="Trade">
+            <Button fx:id="switchT" layoutX="951.0" layoutY="108.0" mnemonicParsing="false" onAction="#T" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: transparent;" text="Trade">
                <font>
                   <Font name="Gill Sans MT" size="12.0" />
                </font>

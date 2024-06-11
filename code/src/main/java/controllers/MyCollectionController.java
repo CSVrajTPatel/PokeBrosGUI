@@ -3,7 +3,9 @@ package controllers;
 import java.io.IOException;
 import java.io.InputStream;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -21,6 +23,16 @@ public class MyCollectionController {
 
     @FXML
     private AnchorPane dispFav;
+
+    @FXML
+    private Button switchP;
+
+    @FXML
+    private Button switchSC;
+
+    @FXML
+    private Button switchT;
+
 
     private User user;
 
@@ -89,4 +101,19 @@ public class MyCollectionController {
         cardBox.getChildren().addAll(imageView, name);
         return cardBox;
     }
+    @FXML
+    void P(ActionEvent event) {
+    
+    }
+
+    @FXML
+    void SC(ActionEvent event) {
+    
+    }
+
+    @FXML
+    void T(ActionEvent event) {
+
+    }
+
 }
