@@ -15,6 +15,7 @@ import javafx.scene.layout.VBox;
 import model.Card;
 import model.Facade;
 import model.User;
+import pokebros.App;
 
 public class MyCollectionController {
 
@@ -101,19 +102,32 @@ public class MyCollectionController {
         cardBox.getChildren().addAll(imageView, name);
         return cardBox;
     }
+
     @FXML
     void P(ActionEvent event) {
-    
+        try {
+            App.setRoot("Pack");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
     void SC(ActionEvent event) {
-    
+        try {
+            App.setRoot("SearchCards");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
     void T(ActionEvent event) {
-
+        try {
+            App.setRoot("Trade");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }
