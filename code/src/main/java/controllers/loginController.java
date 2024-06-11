@@ -10,6 +10,9 @@ public class loginController {
     private TextField password;
 
     @FXML
+    private Button login;
+    
+    @FXML
     private TextField userName;
 
 }
