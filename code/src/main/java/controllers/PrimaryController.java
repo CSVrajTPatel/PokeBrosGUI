@@ -47,11 +47,11 @@ public class PrimaryController {
         // Load Card Collection view
         try {
             System.out.println("Loading Card Collection View...");
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/pokebros/CardCollection.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/pokebros/MyCollection.fxml"));
             Parent root = loader.load();
             
             // Optionally, pass any necessary data to the new controller
-            CardCollectionController controller = loader.getController();
+            MyCollectionController controller = loader.getController();
             controller.setUser(userCheck);
 
             Scene scene = new Scene(root);

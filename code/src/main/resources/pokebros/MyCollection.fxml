@@ -3,6 +3,6 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CardCollectionController">
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MyCollectionController">
     <ListView fx:id="listViewCards" layoutX="14.0" layoutY="14.0" prefHeight="400.0" prefWidth="600.0" />
 </AnchorPane>

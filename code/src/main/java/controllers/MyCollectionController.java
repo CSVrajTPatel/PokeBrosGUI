@@ -16,7 +16,7 @@ import model.User;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class CardCollectionController {
+public class MyCollectionController {
 
     @FXML
     private ListView<Card> listViewCards;
