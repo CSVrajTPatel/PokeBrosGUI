@@ -13,7 +13,7 @@ import javafx.scene.layout.AnchorPane;
 
     @FXML
     private Button switchP;
-
+    
     @FXML
     private Button switchSC;
 
