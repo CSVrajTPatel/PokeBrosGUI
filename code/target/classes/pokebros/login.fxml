@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="435.0" fitWidth="642.0" layoutX="-42.0" layoutY="-34.0">
+         <image>
+            <Image url="@Images/Background.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="211.0" layoutX="155.0" layoutY="78.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 55; -fx-arc-width: 55;" width="276.0" />
+      <ImageView fitHeight="57.0" fitWidth="188.0" layoutX="199.0" layoutY="98.0">
+         <image>
+            <Image url="@Images/PokeBros%20Logo.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="186.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="username:" wrappingWidth="61.10612487792969">
+         <font>
+            <Font name="System Bold" size="8.0" />
+         </font>
+      </Text>
+      <TextField fx:id="userName" layoutX="230.0" layoutY="181.0" prefHeight="16.0" prefWidth="160.0" promptText="Username">
+         <font>
+            <Font size="5.0" />
+         </font>
+      </TextField>
+      <Rectangle arcHeight="1.0" arcWidth="1.0" fill="WHITE" height="23.0" layoutX="226.0" layoutY="177.0" opacity="0.08" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="173.0" />
+      <TextField fx:id="password" layoutX="231.0" layoutY="218.0" prefHeight="16.0" prefWidth="160.0" promptText="Password">
+         <font>
+            <Font size="5.0" />
+         </font>
+      </TextField>
+      <Text layoutX="187.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" wrappingWidth="61.10612487792969">
+         <font>
+            <Font name="System Bold" size="8.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="1.0" arcWidth="1.0" fill="WHITE" height="23.0" layoutX="227.0" layoutY="214.0" opacity="0.08" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="173.0" />
+   </children>
+</AnchorPane>
