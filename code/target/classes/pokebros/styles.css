@@ -1,3 +1,7 @@
+.root {
+    -fx-background-image: url("../Images/Background.png");
+}
+
 .button{
     -fx-background-color: blue;
 }
