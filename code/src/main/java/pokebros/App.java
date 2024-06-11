@@ -17,7 +17,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("SendTrade"), 1080, 720);      // To test different controllers just change whats in ( ) to the controller u want
+        scene = new Scene(loadFXML("login"), 1080, 720);      // To test different controllers just change whats in ( ) to the controller u want
         stage.setScene(scene);
         stage.show();
     }
