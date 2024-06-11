@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 
 <AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MyCollectionController">
-    <ListView fx:id="listViewCards" layoutX="14.0" layoutY="14.0" prefHeight="400.0" prefWidth="600.0" />
+    <ScrollPane fx:id="scrollPane" layoutX="14.0" layoutY="14.0" prefHeight="400.0" prefWidth="600.0" hbarPolicy="ALWAYS" vbarPolicy="NEVER">
+        <HBox fx:id="hBox">
+            <!-- Populate this HBox with ListView items programmatically in your controller -->
+        </HBox>
+    </ScrollPane>
 </AnchorPane>
