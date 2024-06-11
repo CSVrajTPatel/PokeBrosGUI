@@ -22,7 +22,7 @@ public class loginController {
     private TextField password;
 
     @FXML
-    private Button login;
+    private Button Login;
 
     @FXML
     private TextField userName;
@@ -31,7 +31,7 @@ public class loginController {
     private Label lbl_error;
 
     @FXML
-    void login(ActionEvent event) {
+    void Login(ActionEvent event) {
         String username = userName.getText();
         String passwordText = password.getText();
 
@@ -63,7 +63,7 @@ public class loginController {
             controller.setUser(userCheck);
 
             Scene scene = new Scene(root);
-            Stage stage = (Stage) login.getScene().getWindow();
+            Stage stage = (Stage) Login.getScene().getWindow();
             stage.setScene(scene);
             stage.show();
             System.out.println("Switched to Card Collection View.");
@@ -89,11 +89,5 @@ public class loginController {
             e.printStackTrace();
             lbl_error.setText("Failed to load sign up view.");
         }
-    }
-
-    @FXML
-    public void initialize() {
-        // Optionally initialize any additional components
-        lbl_error.setText("");
     }
 }
