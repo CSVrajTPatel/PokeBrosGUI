@@ -13,6 +13,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import model.Facade;
 import model.User;
+import pokebros.App;
 
 public class loginController {
     @FXML
@@ -54,19 +55,7 @@ public class loginController {
 
         // Load Card Collection view
         try {
-            System.out.println("Loading Card Collection View...");
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/pokebros/MyCollection.fxml"));
-            Parent root = loader.load();
-
-            // Pass the user to the new controller
-            MyCollectionController controller = loader.getController();
-            controller.setUser(userCheck);
-
-            Scene scene = new Scene(root);
-            Stage stage = (Stage) Login.getScene().getWindow();
-            stage.setScene(scene);
-            stage.show();
-            System.out.println("Switched to Card Collection View.");
+            App.setRoot("tabView");
         } catch (IOException e) {
             e.printStackTrace();
             lbl_error.setText("Failed to load card collection view.");

@@ -24,19 +24,10 @@ import pokebros.App;
 public class MyCollectionController {
 
     @FXML
-    private AnchorPane dispMyCollection;
-
-    @FXML
     private AnchorPane dispFav;
 
     @FXML
-    private Button switchP;
-
-    @FXML
-    private Button switchSC;
-
-    @FXML
-    private Button switchT;
+    private AnchorPane dispMyCollection;
 
 
     private User user;
@@ -105,51 +96,6 @@ public class MyCollectionController {
 
         cardBox.getChildren().addAll(imageView);
         return cardBox;
-    }
-
-    @FXML
-    void P(ActionEvent event) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/pokebros/Pack.fxml"));
-            Parent root = loader.load();
-
-            Scene scene = new Scene(root);
-            Stage stage = (Stage) switchP.getScene().getWindow();
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @FXML
-    void SC(ActionEvent event) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/pokebros/SearchCards.fxml"));
-            Parent root = loader.load();
-
-            Scene scene = new Scene(root);
-            Stage stage = (Stage) switchSC.getScene().getWindow();
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @FXML
-    void T(ActionEvent event) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/pokebros/Trade.fxml"));
-            Parent root = loader.load();
-
-            Scene scene = new Scene(root);
-            Stage stage = (Stage) switchT.getScene().getWindow();
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 
 }
