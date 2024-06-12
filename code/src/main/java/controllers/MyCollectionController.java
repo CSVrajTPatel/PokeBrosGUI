@@ -8,6 +8,9 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
@@ -124,11 +127,16 @@ public class MyCollectionController {
         stage.show();
     }
 
-
     @FXML
     void SC(ActionEvent event) {
         try {
-            App.setRoot("SearchCards");
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/pokebros/SearchCards.fxml"));
+            Parent root = loader.load();
+
+            Scene scene = new Scene(root);
+            Stage stage = (Stage) switchSC.getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -137,7 +145,13 @@ public class MyCollectionController {
     @FXML
     void T(ActionEvent event) {
         try {
-            App.setRoot("Trade");
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/pokebros/Trade.fxml"));
+            Parent root = loader.load();
+
+            Scene scene = new Scene(root);
+            Stage stage = (Stage) switchT.getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
         } catch (IOException e) {
             e.printStackTrace();
         }

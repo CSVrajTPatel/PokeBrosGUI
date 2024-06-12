@@ -2,7 +2,10 @@
 
 <?import javafx.geometry.Point3D?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -10,7 +13,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller = "controllers.SearchCardsController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane>
          <children>
@@ -46,6 +49,7 @@
                </font>
             </Button>
             <Line endX="1068.6666259765625" endY="-6.666664123535156" layoutX="156.0" layoutY="97.0" startX="-100.00001525878906" startY="-6.666664123535156" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#516374" height="47.0" layoutX="24.0" layoutY="135.0" opacity="0.53" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1217.0" />
             <Line endX="-125.50001525878906" endY="-40.16667175292969" layoutX="181.0" layoutY="171.0" startX="-125.50001525878906" startY="-80.16666412353516" />
             <Line endX="-125.8333740234375" endY="-41.16667175292969" layoutX="1351.0" layoutY="171.0" startX="-125.50001525878906" startY="-80.16666412353516" />
             <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="493.0" layoutY="92.0" opacity="0.71">
@@ -80,6 +84,99 @@
                </image>
             </ImageView>
             <Label layoutX="1104.0" layoutY="23.0" />
+            <TextField fx:id="Searchbar" layoutX="38.0" layoutY="145.0" onAction="#Searchbar" prefHeight="25.0" prefWidth="121.0" promptText="Search" />
+            <Button fx:id="switchMC1" layoutX="180.0" layoutY="133.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="87.0" style="-fx-background-color: transparent;" text="Rarity:">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="switchMC11" layoutX="539.0" layoutY="133.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="87.0" style="-fx-background-color: transparent;" text="Type:">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="12.0" />
+               </font>
+            </Button>
+            <CheckBox fx:id="Rare" layoutX="254.0" layoutY="137.0" mnemonicParsing="false" onAction="#SRare" text="Rare">
+               <font>
+                  <Font name="Gill Sans MT" size="12.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="UltraRare" layoutX="254.0" layoutY="158.0" mnemonicParsing="false" onAction="#SUltraRare" text="Ultra Rare">
+               <font>
+                  <Font name="Gill Sans MT" size="12.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="DoubleRare" layoutX="349.0" layoutY="137.0" mnemonicParsing="false" onAction="#SDoubleRare" text="Double Rare">
+               <font>
+                  <Font name="Gill Sans MT" size="12.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Special" layoutX="349.0" layoutY="158.0" mnemonicParsing="false" onAction="#SSpecial" text="Special">
+               <font>
+                  <Font name="Gill Sans MT" size="12.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Illustration" layoutX="452.0" layoutY="137.0" mnemonicParsing="false" onAction="#SIllustration" text="Illustration">
+               <font>
+                  <Font name="Gill Sans MT" size="12.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="HyperRare" layoutX="452.0" layoutY="158.0" mnemonicParsing="false" onAction="#SHyperRare" text="Hyper Rare">
+               <font>
+                  <Font name="Gill Sans MT" size="12.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Grass" layoutX="616.0" layoutY="137.0" mnemonicParsing="false" onAction="#SGrass" text="Grass">
+               <font>
+                  <Font name="Gill Sans MT" size="12.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Psychic" layoutX="616.0" layoutY="158.0" mnemonicParsing="false" onAction="#SPsychic" text="Psychic">
+               <font>
+                  <Font name="Gill Sans MT" size="12.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Lightning" layoutX="749.0" layoutY="138.0" mnemonicParsing="false" onAction="#SLightning" text="Lightning" textAlignment="CENTER">
+               <font>
+                  <Font name="Gill Sans MT" size="12.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Metal" layoutX="749.0" layoutY="159.0" mnemonicParsing="false" onAction="#SMetal" text="Metal">
+               <font>
+                  <Font name="Gill Sans MT" size="12.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Darkness" layoutX="890.0" layoutY="138.0" mnemonicParsing="false" onAction="#SDarkness" text="Darkness">
+               <font>
+                  <Font name="Gill Sans MT" size="12.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Dragon" layoutX="890.0" layoutY="159.0" mnemonicParsing="false" onAction="#SDragon" text="Dragon">
+               <font>
+                  <Font name="Gill Sans MT" size="12.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Fairy" layoutX="1026.0" layoutY="138.0" mnemonicParsing="false" onAction="#SFairy" text="Fairy">
+               <font>
+                  <Font name="Gill Sans MT" size="12.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Water" layoutX="1026.0" layoutY="159.0" mnemonicParsing="false" onAction="#SWater" text="Water">
+               <font>
+                  <Font name="Gill Sans MT" size="12.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Fire" layoutX="1143.0" layoutY="138.0" mnemonicParsing="false" onAction="#SFire" text="Fire" />
+            <CheckBox layoutX="1143.0" layoutY="159.0" mnemonicParsing="false" text="Fighting" />
+            <ScrollPane fx:id="serachCards" hbarPolicy="ALWAYS" layoutX="50.0" layoutY="205.0" prefHeight="465.0" prefWidth="1170.0" vbarPolicy="NEVER">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="435.0" prefWidth="1161.0" />
+              </content>
+            </ScrollPane>
+            <CheckBox fx:id="ID" layoutX="159.0" layoutY="151.0" mnemonicParsing="false" onAction="#SID" prefHeight="9.0" prefWidth="20.0" text="ID">
+               <font>
+                  <Font name="Gill Sans MT" size="10.0" />
+               </font>
+            </CheckBox>
          </children>
       </AnchorPane>
    </children>
