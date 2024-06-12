@@ -25,26 +25,31 @@ public class TabController implements Initializable{
 
     @FXML
     void myCollection(ActionEvent event) throws IOException {
+        mainPane.getChildren().clear();
         mainPane.getChildren().add(App.loadFXML("MyCollection"));
     }
 
     @FXML
     void packs(ActionEvent event) throws IOException {
+        mainPane.getChildren().clear();
         mainPane.getChildren().add(App.loadFXML("Pack"));
     }
 
     @FXML
     void searchCards(ActionEvent event) throws IOException {
+        mainPane.getChildren().clear();
         mainPane.getChildren().add(App.loadFXML("SearchCards"));
     }
 
     @FXML
     void trade(ActionEvent event) throws IOException {
+        mainPane.getChildren().clear();
         mainPane.getChildren().add(App.loadFXML("Trade"));
     }
 
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
+        mainPane.getChildren().clear();
         try {
             mainPane.getChildren().add(App.loadFXML("MyCollection"));
         } catch (IOException e) {
