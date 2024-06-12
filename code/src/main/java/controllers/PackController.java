@@ -6,10 +6,21 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import model.User;
+
 import java.io.IOException;
 import javafx.scene.control.Button;
 
 public class PackController {
+
+    @FXML
+    private Button Pack1;
+
+    @FXML
+    private Button Pack2;
+
+    @FXML
+    private Button Pack3;
 
     @FXML
     private Button switchMC;
@@ -18,10 +29,13 @@ public class PackController {
     private Button switchSC;
 
     @FXML
-    private Button switchPacks;
-
-    @FXML
     private Button switchT;
+
+    private User user;
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 
     @FXML
     private void switchToMyCollection(ActionEvent event) throws IOException {
@@ -42,20 +56,34 @@ public class PackController {
     }
 
     @FXML
-    private void switchToOpenPack(ActionEvent event) throws IOException {
-        Parent openPackParent = FXMLLoader.load(getClass().getResource("OpenPack.fxml"));
-        Scene openPackScene = new Scene(openPackParent);
-        Stage window = (Stage) switchPacks.getScene().getWindow();
-        window.setScene(openPackScene);
-        window.show();
-    }
-
-    @FXML
     private void switchToTrade(ActionEvent event) throws IOException {
         Parent tradeParent = FXMLLoader.load(getClass().getResource("Trade.fxml"));
         Scene tradeScene = new Scene(tradeParent);
         Stage window = (Stage) switchT.getScene().getWindow();
         window.setScene(tradeScene);
+        window.show();
+    }
+
+    @FXML
+    private void openPack1(ActionEvent event) throws IOException {
+        switchToOpenPack(event);
+    }
+
+    @FXML
+    private void openPack2(ActionEvent event) throws IOException {
+        switchToOpenPack(event);
+    }
+
+    @FXML
+    private void openPack3(ActionEvent event) throws IOException {
+        switchToOpenPack(event);
+    }
+
+    private void switchToOpenPack(ActionEvent event) throws IOException {
+        Parent openPackParent = FXMLLoader.load(getClass().getResource("OpenPack.fxml"));
+        Scene openPackScene = new Scene(openPackParent);
+        Stage window = (Stage) Pack1.getScene().getWindow();
+        window.setScene(openPackScene);
         window.show();
     }
 }

@@ -5,6 +5,9 @@ import java.io.InputStream;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
@@ -12,6 +15,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 import model.Card;
 import model.Facade;
 import model.User;
@@ -104,13 +108,22 @@ public class MyCollectionController {
     }
 
     @FXML
-    void P(ActionEvent event) {
-        try {
-            App.setRoot("Pack");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    void P(ActionEvent event) throws IOException {
+        Facade facade = Facade.getInstance();
+        User userCheck = facade.getUser();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/pokebros/Pack.fxml"));
+        Parent root = loader.load();
+
+        // Pass the user to the new controller
+        PackController controller = loader.getController();
+        controller.setUser(userCheck);
+
+        Scene scene = new Scene(root);
+        Stage stage = (Stage) switchP.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
+
 
     @FXML
     void SC(ActionEvent event) {

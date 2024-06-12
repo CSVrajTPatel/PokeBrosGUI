@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PackController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PackController">
    <children>
       <AnchorPane>
          <children>
@@ -80,6 +80,36 @@
                </image>
             </ImageView>
             <Label layoutX="1104.0" layoutY="23.0" />
+            <Button fx:id="Pack1" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="130.0" layoutY="615.0" mnemonicParsing="false" onAction="#openPack1" prefHeight="30.0" prefWidth="229.0" scaleShape="false" style="-fx-background-color: transparent;" text="Bulbasaur Pack">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="Pack2" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="526.0" layoutY="615.0" mnemonicParsing="false" onAction="#openPack2" prefHeight="30.0" prefWidth="229.0" scaleShape="false" style="-fx-background-color: transparent;" text="Charmander Pack">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="Pack3" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="900.0" layoutY="615.0" mnemonicParsing="false" onAction="#openPack3" prefHeight="30.0" prefWidth="229.0" scaleShape="false" style="-fx-background-color: transparent;" text="Squirtle Pack">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="417.0" fitWidth="297.0" layoutX="108.0" layoutY="158.0" preserveRatio="true" smooth="false">
+               <image>
+                  <Image url="@Images/pokemon/1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="413.0" fitWidth="335.0" layoutX="492.0" layoutY="158.0" preserveRatio="true" smooth="false">
+               <image>
+                  <Image url="@Images/pokemon/4.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="413.0" fitWidth="318.0" layoutX="866.0" layoutY="158.0" preserveRatio="true" smooth="false">
+               <image>
+                  <Image url="@Images/pokemon/7.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </children>
