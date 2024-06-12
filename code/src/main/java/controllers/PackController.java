@@ -1,14 +1,21 @@
 package controllers;
-import javafx.fxml.FXML;
-import javafx.scene.control.Button;
+import java.io.IOException;
 
-public class SwitchCardsController {
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.stage.Stage;
+
+public class PackController {
 
     @FXML
     private Button switchMC;
-
+    
     @FXML
-    private Button switchP;
+    private Button switchSC;
 
     @FXML
     private Button switchT;
@@ -27,13 +34,13 @@ public class SwitchCardsController {
         }
     }
 
-    void P(ActionEvent event) {
+    void SC(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/pokebros/Pack.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/pokebros/SearchCards.fxml"));
             Parent root = loader.load();
 
             Scene scene = new Scene(root);
-            Stage stage = (Stage) switchP.getScene().getWindow();
+            Stage stage = (Stage) switchSC.getScene().getWindow();
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {

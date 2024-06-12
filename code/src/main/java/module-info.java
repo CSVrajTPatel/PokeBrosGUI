@@ -2,6 +2,7 @@ module pokebros.code {
     requires javafx.controls;
     requires javafx.fxml;
     requires json.simple;
+    requires javafx.graphics;
     
     opens model to javafx.fxml;
 
