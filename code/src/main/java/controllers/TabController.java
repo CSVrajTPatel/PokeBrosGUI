@@ -6,11 +6,10 @@ import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
-import pokebros.*;
+import pokebros.App;
 
 public class TabController implements Initializable{
 
@@ -30,10 +29,16 @@ public class TabController implements Initializable{
     private Button logOut;
 
     @FXML
-    void myCollection(ActionEvent event) throws IOException {
+    void myCollection(ActionEvent event) {
         mainPane.getChildren().clear();
-        mainPane.getChildren().add(App.loadFXML("MyCollection"));
+        try {
+            mainPane.getChildren().add(App.loadFXML("MyCollection"));
+        } catch (IOException e) {
+            System.out.println("Error loading My Collection view:");
+            e.printStackTrace();
+        }
     }
+    
 
     @FXML
     void packs(ActionEvent event) throws IOException {
@@ -55,7 +60,7 @@ public class TabController implements Initializable{
 
     @FXML
     void logOut(ActionEvent event) throws IOException {
-       
+
     }
 
     @Override
