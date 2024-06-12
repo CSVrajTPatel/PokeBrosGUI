@@ -1,4 +1,5 @@
 package controllers;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -63,19 +64,10 @@ public class SearchCardsController {
     private ScrollPane serachCards;
 
     @FXML
-    private Button switchMC;
-
-    @FXML
     private Button switchMC1;
 
     @FXML
     private Button switchMC11;
-
-    @FXML
-    private Button switchP;
-
-    @FXML
-    private Button switchT;
 
     @FXML
     void SDarkness(ActionEvent event) {
