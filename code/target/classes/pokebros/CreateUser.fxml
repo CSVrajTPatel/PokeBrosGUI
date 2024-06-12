@@ -39,7 +39,7 @@
       </TextField>
       <Rectangle arcHeight="1.0" arcWidth="1.0" fill="WHITE" height="25.0" layoutX="531.0" layoutY="303.0" opacity="0.08" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="330.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="32.0" layoutX="423.0" layoutY="486.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="441.0" />
-      <Button fx:id="CreateUser" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="431.0" layoutY="487.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="427.0" scaleShape="false" style="-fx-background-color: transparent;" text="Create Account" textFill="#fdfdfd">
+      <Button fx:id="CreateUser" onAction="#handleCreateUser" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="431.0" layoutY="487.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="427.0" scaleShape="false" style="-fx-background-color: transparent;" text="Create Account" textFill="#fdfdfd">
          <font>
             <Font name="Gill Sans MT Bold" size="10.0" />
          </font>

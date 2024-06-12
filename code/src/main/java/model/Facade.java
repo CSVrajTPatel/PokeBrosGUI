@@ -12,8 +12,13 @@ public class Facade {
   }
 
   public static Facade getInstance() {
+    if (facade == null) {
+      facade = new Facade();
+    }
     return facade;
   }
+
+  private Facade() {}
 
   private Facade(String username, String password) {
     user = loginUser(username, password);
@@ -108,10 +113,15 @@ public class Facade {
     return user.claimDailyCurrency(); 
   }
 
-    public boolean createUser(String userName, String password, String firstName, String lastName, String email) {
-      UserList userList = UserList.getInstance();
-      return userList.addUserToList(userName, password, firstName, lastName, email);
+  public boolean createUser(String username, String password, String firstName, String lastName, String email) {
+    UserList userList = UserList.getInstance();
+    if (userList.addUserToList(username, password, firstName, lastName, email)) {
+      user = userList.searchByUserName(username);
+      return true;
     }
+    return false;
+  }
+
 
     public void logOffUser(){
       UserList userList = UserList.getInstance();
