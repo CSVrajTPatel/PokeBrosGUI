@@ -79,10 +79,10 @@ public class MyCollectionController {
         VBox cardBox = new VBox();
         cardBox.setSpacing(5);
 
-        Label name = new Label(card.getName());
+        //Label name = new Label(card.getName());
         ImageView imageView = new ImageView();
-        imageView.setFitHeight(100);
-        imageView.setFitWidth(100);
+        imageView.setFitHeight(195);
+        imageView.setFitWidth(140);
 
         // Load image
         String imagePath = "/pokebros/Images/pokemon/" + card.getId() + ".png";
@@ -99,7 +99,7 @@ public class MyCollectionController {
             imageView.setImage(null);
         }
 
-        cardBox.getChildren().addAll(imageView, name);
+        cardBox.getChildren().addAll(imageView);
         return cardBox;
     }
 

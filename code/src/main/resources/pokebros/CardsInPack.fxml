@@ -9,7 +9,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller = "controllers.CardsInPackController">
    <children>
       <AnchorPane layoutX="-6.0" layoutY="-1.0" prefHeight="734.0" prefWidth="1337.0">
          <children>
