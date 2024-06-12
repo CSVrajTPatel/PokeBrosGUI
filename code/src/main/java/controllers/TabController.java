@@ -24,6 +24,9 @@ public class TabController implements Initializable{
     private Button switchT;
 
     @FXML
+    private Button switchMC;
+
+    @FXML
     void myCollection(ActionEvent event) throws IOException {
         mainPane.getChildren().clear();
         mainPane.getChildren().add(App.loadFXML("MyCollection"));
