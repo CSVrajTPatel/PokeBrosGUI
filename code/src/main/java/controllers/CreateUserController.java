@@ -2,17 +2,20 @@ package controllers;
 
 import java.io.IOException;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import model.Facade;
+import pokebros.App;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
-import model.Facade;
-
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 public class CreateUserController {
 
     @FXML
@@ -35,7 +38,7 @@ public class CreateUserController {
 
     // Method to handle the creation of a new user
     @FXML
-    private void handleCreateUser() throws IOException {
+    void handleCreateUser(ActionEvent event) throws IOException {
         String username = newUsername.getText();
         String password = newPassword.getText();
         String userEmail = email.getText();
@@ -62,17 +65,11 @@ public class CreateUserController {
                 return;
             }
 
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/pokebros/MyCollection.fxml"));
-            Parent root = loader.load();
-
-            // Pass the user to the new controller
-            MyCollectionController controller = loader.getController();
-            controller.setUser(facade.getUser());
-
-            Scene scene = new Scene(root);
-            Stage stage = (Stage) CreateUser.getScene().getWindow();
-            stage.setScene(scene);
-            stage.show();
+             try {
+                App.setRoot("tabView");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         } else {
             showAlert("Validation Error", "Username Taken.");
         }

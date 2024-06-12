@@ -66,13 +66,7 @@ public class loginController {
     void goToSignUp(ActionEvent event) {
         try {
             System.out.println("Loading Sign Up View...");
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/pokebros/CreateUser.fxml"));
-            Parent root = loader.load();
-
-            Scene scene = new Scene(root);
-            Stage stage = (Stage) goToSignUp.getScene().getWindow();
-            stage.setScene(scene);
-            stage.show();
+            App.setRoot("CreateUser");
             System.out.println("Switched to Sign Up View.");
         } catch (IOException e) {
             e.printStackTrace();
