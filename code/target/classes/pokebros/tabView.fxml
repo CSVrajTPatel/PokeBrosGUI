@@ -80,7 +80,7 @@
                   <Image url="@Images/currency%20icon.png" />
                </image>
             </ImageView>
-            <Label layoutX="1104.0" layoutY="23.0" />
+            <Label layoutX="1103.0" layoutY="30.0" prefHeight="17.0" prefWidth="85.0" />
             <Pane fx:id="mainPane" layoutX="56.0" layoutY="147.0" prefHeight="521.0" prefWidth="1170.0" />
             <Rectangle fill="#1100ff" height="27.0" layoutX="998.0" layoutY="38.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 55; -fx-arc-width: 55;" width="73.0" />
             <Button fx:id="logOut" layoutX="998.0" layoutY="34.0" mnemonicParsing="false" onAction="#logOut" prefHeight="35.0" prefWidth="73.0" style="-fx-background-color: transparent;" text="LOGOUT" textFill="WHITE">

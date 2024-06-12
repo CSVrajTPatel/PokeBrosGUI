@@ -27,6 +27,9 @@ public class TabController implements Initializable{
     private Button switchMC;
 
     @FXML
+    private Button logOut;
+
+    @FXML
     void myCollection(ActionEvent event) throws IOException {
         mainPane.getChildren().clear();
         mainPane.getChildren().add(App.loadFXML("MyCollection"));
@@ -48,6 +51,11 @@ public class TabController implements Initializable{
     void trade(ActionEvent event) throws IOException {
         mainPane.getChildren().clear();
         mainPane.getChildren().add(App.loadFXML("Trade"));
+    }
+
+    @FXML
+    void logOut(ActionEvent event) throws IOException {
+       
     }
 
     @Override
