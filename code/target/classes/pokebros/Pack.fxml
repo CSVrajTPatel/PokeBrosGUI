@@ -12,32 +12,32 @@
       <Point3D />
    </rotationAxis>
    <children>
-      <Button fx:id="Pack1" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="140.0" layoutY="625.0" mnemonicParsing="false" onAction="#openPack1" prefHeight="30.0" prefWidth="229.0" scaleShape="false" style="-fx-background-color: transparent;" text="Bulbasaur Pack">
+      <Button fx:id="Pack1" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="106.0" layoutY="480.0" mnemonicParsing="false" onAction="#openPack1" prefHeight="30.0" prefWidth="229.0" scaleShape="false" style="-fx-background-color: transparent;" text="Bulbasaur Pack">
          <font>
             <Font name="Gill Sans MT Bold" size="18.0" />
          </font>
       </Button>
-      <Button fx:id="Pack2" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="536.0" layoutY="625.0" mnemonicParsing="false" onAction="#openPack2" prefHeight="30.0" prefWidth="229.0" scaleShape="false" style="-fx-background-color: transparent;" text="Charmander Pack">
+      <Button fx:id="Pack2" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="472.0" layoutY="480.0" mnemonicParsing="false" onAction="#openPack2" prefHeight="30.0" prefWidth="229.0" scaleShape="false" style="-fx-background-color: transparent;" text="Charmander Pack">
          <font>
             <Font name="Gill Sans MT Bold" size="18.0" />
          </font>
       </Button>
-      <Button fx:id="Pack3" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="910.0" layoutY="625.0" mnemonicParsing="false" onAction="#openPack3" prefHeight="30.0" prefWidth="229.0" scaleShape="false" style="-fx-background-color: transparent;" text="Squirtle Pack">
+      <Button fx:id="Pack3" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="840.0" layoutY="480.0" mnemonicParsing="false" onAction="#openPack3" prefHeight="30.0" prefWidth="229.0" scaleShape="false" style="-fx-background-color: transparent;" text="Squirtle Pack">
          <font>
             <Font name="Gill Sans MT Bold" size="18.0" />
          </font>
       </Button>
-      <ImageView fitHeight="417.0" fitWidth="297.0" layoutX="118.0" layoutY="168.0" preserveRatio="true" smooth="false">
+      <ImageView fitHeight="417.0" fitWidth="297.0" layoutX="72.0" layoutY="33.0" preserveRatio="true" smooth="false">
          <image>
             <Image url="@Images/pokemon/1.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="413.0" fitWidth="335.0" layoutX="502.0" layoutY="168.0" preserveRatio="true" smooth="false">
+      <ImageView fitHeight="413.0" fitWidth="335.0" layoutX="438.0" layoutY="40.0" preserveRatio="true" smooth="false">
          <image>
             <Image url="@Images/pokemon/4.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="413.0" fitWidth="318.0" layoutX="876.0" layoutY="168.0" preserveRatio="true" smooth="false">
+      <ImageView fitHeight="413.0" fitWidth="318.0" layoutX="806.0" layoutY="40.0" preserveRatio="true" smooth="false">
          <image>
             <Image url="@Images/pokemon/7.png" />
          </image>

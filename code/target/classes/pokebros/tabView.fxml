@@ -11,7 +11,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TabController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TabController">
    <children>
       <AnchorPane>
          <children>
@@ -26,9 +26,9 @@
                   <Image url="@Images/PokeBros%20Logo.png" />
                </image>
             </ImageView>
-            <Button fx:id = "switchMC" layoutX="200.0" layoutY="108.0" mnemonicParsing="false" onAction="#myCollection" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: transparent;" text="My Collection" textFill="#0011ff">
+            <Button fx:id="switchMC" layoutX="200.0" layoutY="108.0" mnemonicParsing="false" onAction="#myCollection" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: transparent;" text="My Collection">
                <font>
-                  <Font name="Gill Sans MT Bold" size="12.0" />
+                  <Font name="Gill Sans MT" size="12.0" />
                </font>
             </Button>
             <Button fx:id="switchSC" layoutX="450.0" layoutY="108.0" mnemonicParsing="false" onAction="#searchCards" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: transparent;" text="Search Cards">
@@ -82,6 +82,12 @@
             </ImageView>
             <Label layoutX="1104.0" layoutY="23.0" />
             <Pane fx:id="mainPane" layoutX="56.0" layoutY="147.0" prefHeight="521.0" prefWidth="1170.0" />
+            <Rectangle fill="#1100ff" height="27.0" layoutX="998.0" layoutY="38.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 55; -fx-arc-width: 55;" width="73.0" />
+            <Button fx:id="logOut" layoutX="998.0" layoutY="34.0" mnemonicParsing="false" onAction="#logOut" prefHeight="35.0" prefWidth="73.0" style="-fx-background-color: transparent;" text="LOGOUT" textFill="WHITE">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="12.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
    </children>
