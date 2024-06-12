@@ -1,107 +1,61 @@
 package controllers;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import model.Card;
-import model.Pack;
-import pokebros.App;
+import java.io.IOException;
+import javafx.scene.control.Button;
 
 public class PackController {
 
     @FXML
-    private Button openPackButton;
-
-    @FXML
-    private VBox cardContainer;
+    private Button switchMC;
 
     @FXML
     private Button switchSC;
 
     @FXML
+    private Button switchPacks;
+
+    @FXML
     private Button switchT;
 
     @FXML
-    private Button switchC;
-
-    @FXML
-    void initialize() {
-        // Initialization logic if needed
+    private void switchToMyCollection(ActionEvent event) throws IOException {
+        Parent myCollectionParent = FXMLLoader.load(getClass().getResource("MyCollection.fxml"));
+        Scene myCollectionScene = new Scene(myCollectionParent);
+        Stage window = (Stage) switchMC.getScene().getWindow();
+        window.setScene(myCollectionScene);
+        window.show();
     }
 
     @FXML
-    void openPack(ActionEvent event) {
-        Pack pack = new Pack(1); // Assume pack number 1 for simplicity
-        ArrayList<Card> cards = pack.openPack();
-
-        cardContainer.getChildren().clear();
-        for (Card card : cards) {
-            cardContainer.getChildren().add(createCardBox(card));
-        }
-    }
-
-    private VBox createCardBox(Card card) {
-        VBox cardBox = new VBox();
-        cardBox.setSpacing(5);
-
-        ImageView imageView = new ImageView();
-        imageView.setFitHeight(200);
-        imageView.setFitWidth(144);
-
-        String imagePath = "/pokebros/Images/pokemon/" + card.getId() + ".png";
-        try (InputStream imageStream = getClass().getResourceAsStream(imagePath)) {
-            if (imageStream != null) {
-                Image image = new Image(imageStream);
-                imageView.setImage(image);
-            } else {
-                System.err.println("Image not found: " + imagePath);
-                imageView.setImage(null);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-            imageView.setImage(null);
-        }
-
-        cardBox.getChildren().add(imageView);
-        return cardBox;
+    private void switchToSearchCards(ActionEvent event) throws IOException {
+        Parent searchCardsParent = FXMLLoader.load(getClass().getResource("SearchCards.fxml"));
+        Scene searchCardsScene = new Scene(searchCardsParent);
+        Stage window = (Stage) switchSC.getScene().getWindow();
+        window.setScene(searchCardsScene);
+        window.show();
     }
 
     @FXML
-    void switchToSearchCards(ActionEvent event) {
-        switchScene("SearchCards.fxml");
+    private void switchToOpenPack(ActionEvent event) throws IOException {
+        Parent openPackParent = FXMLLoader.load(getClass().getResource("OpenPack.fxml"));
+        Scene openPackScene = new Scene(openPackParent);
+        Stage window = (Stage) switchPacks.getScene().getWindow();
+        window.setScene(openPackScene);
+        window.show();
     }
 
     @FXML
-    void switchToTrade(ActionEvent event) {
-        switchScene("Trade.fxml");
-    }
-
-    @FXML
-    void switchToCollection(ActionEvent event) {
-        switchScene("MyCollection.fxml");
-    }
-
-    private void switchScene(String fxmlFile) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/pokebros/" + fxmlFile));
-            Parent root = loader.load();
-            Scene scene = new Scene(root);
-            Stage stage = (Stage) openPackButton.getScene().getWindow();
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    private void switchToTrade(ActionEvent event) throws IOException {
+        Parent tradeParent = FXMLLoader.load(getClass().getResource("Trade.fxml"));
+        Scene tradeScene = new Scene(tradeParent);
+        Stage window = (Stage) switchT.getScene().getWindow();
+        window.setScene(tradeScene);
+        window.show();
     }
 }
