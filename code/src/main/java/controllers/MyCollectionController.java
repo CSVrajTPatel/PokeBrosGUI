@@ -127,6 +127,7 @@ public class MyCollectionController {
         stage.show();
     }
 
+
     @FXML
     void SC(ActionEvent event) {
         try {

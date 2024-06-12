@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import model.Facade;
 import model.User;
 
 import java.io.IOException;
@@ -39,11 +40,19 @@ public class PackController {
 
     @FXML
     private void switchToMyCollection(ActionEvent event) throws IOException {
-        Parent myCollectionParent = FXMLLoader.load(getClass().getResource("MyCollection.fxml"));
-        Scene myCollectionScene = new Scene(myCollectionParent);
-        Stage window = (Stage) switchMC.getScene().getWindow();
-        window.setScene(myCollectionScene);
-        window.show();
+         Facade facade = Facade.getInstance();
+        User userCheck = facade.getUser();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/pokebros/MyCollection.fxml"));
+        Parent root = loader.load();
+
+        // Pass the user to the new controller
+        MyCollectionController controller = loader.getController();
+        controller.setUser(userCheck);
+
+        Scene scene = new Scene(root);
+        Stage stage = (Stage) switchMC.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML

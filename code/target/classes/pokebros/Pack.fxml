@@ -25,7 +25,7 @@
                   <Image url="@Images/PokeBros%20Logo.png" />
                </image>
             </ImageView>
-            <Button fx:id="switchMC" layoutX="200.0" layoutY="108.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: transparent;" text="My Collection">
+            <Button fx:id="switchMC" layoutX="200.0" layoutY="108.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: transparent;" text="My Collection" onAction="#switchToMyCollection">
                <font>
                   <Font name="Gill Sans MT" size="12.0" />
                </font>
