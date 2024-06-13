@@ -27,7 +27,7 @@
             <Font name="Gill Sans MT Bold" size="18.0" />
          </font>
       </Button>
-      <ImageView fitHeight="417.0" fitWidth="297.0" layoutX="72.0" layoutY="33.0" preserveRatio="true" smooth="false">
+      <ImageView fitHeight="417.0" fitWidth="297.0" layoutX="72.0" layoutY="40.0" preserveRatio="true" smooth="false">
          <image>
             <Image url="@Images/pokemon/1.png" />
          </image>
