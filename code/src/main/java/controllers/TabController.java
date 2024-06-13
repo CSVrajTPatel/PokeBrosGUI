@@ -9,6 +9,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
+import model.Facade;
 import pokebros.App;
 
 public class TabController implements Initializable{
@@ -60,7 +62,12 @@ public class TabController implements Initializable{
 
     @FXML
     void logOut(ActionEvent event) throws IOException {
+        Facade facade = Facade.getInstance();
+        facade.logOffUser(); // Log off the user
 
+        // Close the current stage
+        Stage stage = (Stage) logOut.getScene().getWindow();
+        stage.close();
     }
 
     @Override
