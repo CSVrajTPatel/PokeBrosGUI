@@ -4,61 +4,71 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleGroup;
 
 public class SearchCardsController {
-
-    @FXML
-    private CheckBox Darkness;
-
-    @FXML
-    private CheckBox DoubleRare;
-
-    @FXML
-    private CheckBox Dragon;
-
-    @FXML
-    private CheckBox Fairy;
-
-    @FXML
-    private CheckBox Fire;
-
-    @FXML
-    private CheckBox Grass;
-
-    @FXML
-    private CheckBox HyperRare;
 
     @FXML
     private CheckBox ID;
 
     @FXML
-    private CheckBox Illustration;
+    private RadioButton R_Double_Rare;
 
     @FXML
-    private CheckBox Lightning;
+    private RadioButton R_Hyper_Rare;
 
     @FXML
-    private CheckBox Metal;
+    private RadioButton R_Illustration;
 
     @FXML
-    private CheckBox Psychic;
+    private RadioButton R_RARE;
 
     @FXML
-    private CheckBox Rare;
+    private RadioButton R_Special;
+
+    @FXML
+    private RadioButton R_ULtra_Rare;
+
+    @FXML
+    private ToggleGroup Rarity;
 
     @FXML
     private TextField Searchbar;
 
     @FXML
-    private CheckBox Special;
+    private RadioButton T_Darkness;
 
     @FXML
-    private CheckBox UltraRare;
+    private RadioButton T_Dragon;
 
     @FXML
-    private CheckBox Water;
+    private RadioButton T_Fairy;
 
+    @FXML
+    private RadioButton T_Fighting;
+
+    @FXML
+    private RadioButton T_Fire;
+
+    @FXML
+    private RadioButton T_Grass;
+
+    @FXML
+    private RadioButton T_Lightning;
+
+    @FXML
+    private RadioButton T_Metal;
+
+    @FXML
+    private RadioButton T_Psychic;
+
+    @FXML
+    private RadioButton T_Water;
+
+    @FXML
+    private ToggleGroup Type;
 
     @FXML
     private Button switchMC1;
@@ -67,82 +77,87 @@ public class SearchCardsController {
     private Button switchMC11;
 
     @FXML
-    void SDarkness(ActionEvent event) {
+    void FR_Double_Rare(ActionEvent event) {
 
     }
 
     @FXML
-    void SDoubleRare(ActionEvent event) {
+    void FR_Hyper_Rare(ActionEvent event) {
 
     }
 
     @FXML
-    void SDragon(ActionEvent event) {
+    void FR_Illustration(ActionEvent event) {
 
     }
 
     @FXML
-    void SFairy(ActionEvent event) {
+    void FR_RARE(ActionEvent event) {
 
     }
 
     @FXML
-    void SFire(ActionEvent event) {
+    void FR_Special(ActionEvent event) {
 
     }
 
     @FXML
-    void SGrass(ActionEvent event) {
+    void FR_ULtra_Rare(ActionEvent event) {
 
     }
 
     @FXML
-    void SHyperRare(ActionEvent event) {
+    void FT_Darkness(ActionEvent event) {
+
+    }
+
+    @FXML
+    void FT_Dragon(ActionEvent event) {
+
+    }
+
+    @FXML
+    void FT_Fairy(ActionEvent event) {
+
+    }
+
+    @FXML
+    void FT_Fighting(ActionEvent event) {
+
+    }
+
+    @FXML
+    void FT_Fire(ActionEvent event) {
+
+    }
+
+    @FXML
+    void FT_Grass(ActionEvent event) {
+
+    }
+
+    @FXML
+    void FT_Lightning(ActionEvent event) {
+
+    }
+
+    @FXML
+    void FT_Metal(ActionEvent event) {
+
+    }
+
+    @FXML
+    void FT_Psychic(ActionEvent event) {
+
+    }
+
+    @FXML
+    void FT_Water(ActionEvent event) {
 
     }
 
     @FXML
     void SID(ActionEvent event) {
-
-    }
-
-    @FXML
-    void SIllustration(ActionEvent event) {
-
-    }
-
-    @FXML
-    void SLightning(ActionEvent event) {
-
-    }
-
-    @FXML
-    void SMetal(ActionEvent event) {
-
-    }
-
-    @FXML
-    void SPsychic(ActionEvent event) {
-
-    }
-
-    @FXML
-    void SRare(ActionEvent event) {
-
-    }
-
-    @FXML
-    void SSpecial(ActionEvent event) {
-
-    }
-
-    @FXML
-    void SUltraRare(ActionEvent event) {
-
-    }
-
-    @FXML
-    void SWater(ActionEvent event) {
 
     }
 

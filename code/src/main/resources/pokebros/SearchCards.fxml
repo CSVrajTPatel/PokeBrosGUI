@@ -3,8 +3,10 @@
 <?import javafx.geometry.Point3D?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -12,7 +14,7 @@
    <children>
       <AnchorPane layoutX="25.0" layoutY="-111.0" prefHeight="565.0" prefWidth="1228.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <TextField fx:id="Searchbar" layoutX="29.0" layoutY="18.0" onAction="#Searchbar" prefHeight="25.0" prefWidth="121.0" promptText="Search" />
+            <TextField fx:id="Searchbar" layoutX="25.0" layoutY="18.0" onAction="#Searchbar" prefHeight="25.0" prefWidth="121.0" promptText="Search" />
             <Button fx:id="switchMC1" layoutX="171.0" layoutY="6.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="87.0" style="-fx-background-color: transparent;" text="Rarity:">
                <font>
                   <Font name="Gill Sans MT Bold" size="12.0" />
@@ -23,78 +25,92 @@
                   <Font name="Gill Sans MT Bold" size="12.0" />
                </font>
             </Button>
-            <CheckBox fx:id="Rare" layoutX="245.0" layoutY="10.0" mnemonicParsing="false" onAction="#SRare" text="Rare">
+            <RadioButton fx:id="R_RARE" layoutX="245.0" layoutY="9.0" mnemonicParsing="false" onAction="#FR_RARE" text="Rare">
                <font>
                   <Font name="Gill Sans MT" size="12.0" />
                </font>
-            </CheckBox>
-            <CheckBox fx:id="UltraRare" layoutX="245.0" layoutY="31.0" mnemonicParsing="false" onAction="#SUltraRare" text="Ultra Rare">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Rarity" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="R_ULtra_Rare" layoutX="245.0" layoutY="31.0" mnemonicParsing="false" onAction="#FR_ULtra_Rare" text="Ultra Rare" toggleGroup="$Rarity">
                <font>
                   <Font name="Gill Sans MT" size="12.0" />
                </font>
-            </CheckBox>
-            <CheckBox fx:id="DoubleRare" layoutX="340.0" layoutY="10.0" mnemonicParsing="false" onAction="#SDoubleRare" text="Double Rare">
+            </RadioButton>
+            <RadioButton fx:id="R_Double_Rare" layoutX="340.0" layoutY="11.0" mnemonicParsing="false" onAction="#FR_Double_Rare" text="Double Rare" toggleGroup="$Rarity">
                <font>
                   <Font name="Gill Sans MT" size="12.0" />
                </font>
-            </CheckBox>
-            <CheckBox fx:id="Special" layoutX="340.0" layoutY="31.0" mnemonicParsing="false" onAction="#SSpecial" text="Special">
+            </RadioButton>
+            <RadioButton fx:id="R_Special" layoutX="340.0" layoutY="31.0" mnemonicParsing="false" onAction="#FR_Special" text="Special" toggleGroup="$Rarity">
                <font>
                   <Font name="Gill Sans MT" size="12.0" />
                </font>
-            </CheckBox>
-            <CheckBox fx:id="Illustration" layoutX="443.0" layoutY="10.0" mnemonicParsing="false" onAction="#SIllustration" text="Illustration">
+            </RadioButton>
+            <RadioButton fx:id="R_Illustration" layoutX="444.0" layoutY="10.0" mnemonicParsing="false" onAction="#FR_Illustration" text="Illustration" toggleGroup="$Rarity">
                <font>
                   <Font name="Gill Sans MT" size="12.0" />
                </font>
-            </CheckBox>
-            <CheckBox fx:id="HyperRare" layoutX="443.0" layoutY="31.0" mnemonicParsing="false" onAction="#SHyperRare" text="Hyper Rare">
+            </RadioButton>
+            <RadioButton fx:id="R_Hyper_Rare" layoutX="444.0" layoutY="31.0" mnemonicParsing="false" onAction="#FR_Hyper_Rare" text="Hyper Rare" toggleGroup="$Rarity">
                <font>
                   <Font name="Gill Sans MT" size="12.0" />
                </font>
-            </CheckBox>
-            <CheckBox fx:id="Grass" layoutX="607.0" layoutY="10.0" mnemonicParsing="false" onAction="#SGrass" text="Grass">
+            </RadioButton>
+            <RadioButton fx:id="T_Grass" layoutX="608.0" layoutY="10.0" mnemonicParsing="false" onAction="#FT_Grass" text="Grass">
                <font>
                   <Font name="Gill Sans MT" size="12.0" />
                </font>
-            </CheckBox>
-            <CheckBox fx:id="Psychic" layoutX="607.0" layoutY="31.0" mnemonicParsing="false" onAction="#SPsychic" text="Psychic">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Type" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="T_Psychic" layoutX="608.0" layoutY="31.0" mnemonicParsing="false" onAction="#FT_Psychic" text="Psychic" toggleGroup="$Type">
                <font>
                   <Font name="Gill Sans MT" size="12.0" />
                </font>
-            </CheckBox>
-            <CheckBox fx:id="Lightning" layoutX="740.0" layoutY="11.0" mnemonicParsing="false" onAction="#SLightning" text="Lightning" textAlignment="CENTER">
+            </RadioButton>
+            <RadioButton fx:id="T_Lightning" layoutX="741.0" layoutY="11.0" mnemonicParsing="false" onAction="#FT_Lightning" text="Lightning" toggleGroup="$Type">
                <font>
                   <Font name="Gill Sans MT" size="12.0" />
                </font>
-            </CheckBox>
-            <CheckBox fx:id="Metal" layoutX="740.0" layoutY="32.0" mnemonicParsing="false" onAction="#SMetal" text="Metal">
+            </RadioButton>
+            <RadioButton fx:id="T_Metal" layoutX="741.0" layoutY="32.0" mnemonicParsing="false" onAction="#FT_Metal" text="Metal" toggleGroup="$Type">
                <font>
                   <Font name="Gill Sans MT" size="12.0" />
                </font>
-            </CheckBox>
-            <CheckBox fx:id="Darkness" layoutX="881.0" layoutY="11.0" mnemonicParsing="false" onAction="#SDarkness" text="Darkness">
+            </RadioButton>
+            <RadioButton fx:id="T_Darkness" layoutX="882.0" layoutY="11.0" mnemonicParsing="false" onAction="#FT_Darkness" text="Darkness" toggleGroup="$Type">
                <font>
                   <Font name="Gill Sans MT" size="12.0" />
                </font>
-            </CheckBox>
-            <CheckBox fx:id="Dragon" layoutX="881.0" layoutY="32.0" mnemonicParsing="false" onAction="#SDragon" text="Dragon">
+            </RadioButton>
+            <RadioButton fx:id="T_Dragon" layoutX="882.0" layoutY="32.0" mnemonicParsing="false" onAction="#FT_Dragon" text="Dragon" toggleGroup="$Type">
                <font>
                   <Font name="Gill Sans MT" size="12.0" />
                </font>
-            </CheckBox>
-            <CheckBox fx:id="Fairy" layoutX="1017.0" layoutY="11.0" mnemonicParsing="false" onAction="#SFairy" text="Fairy">
+            </RadioButton>
+            <RadioButton fx:id="T_Fairy" layoutX="1017.0" layoutY="11.0" mnemonicParsing="false" onAction="#FT_Fairy" text="Fairy" toggleGroup="$Type">
                <font>
                   <Font name="Gill Sans MT" size="12.0" />
                </font>
-            </CheckBox>
-            <CheckBox fx:id="Water" layoutX="1017.0" layoutY="32.0" mnemonicParsing="false" onAction="#SWater" text="Water">
+            </RadioButton>
+            <RadioButton fx:id="T_Fire" layoutX="1135.0" layoutY="11.0" mnemonicParsing="false" onAction="#FT_Fire" text="Fire" toggleGroup="$Type">
                <font>
                   <Font name="Gill Sans MT" size="12.0" />
                </font>
-            </CheckBox>
-            <CheckBox fx:id="Fire" layoutX="1134.0" layoutY="11.0" mnemonicParsing="false" onAction="#SFire" text="Fire" />
-            <CheckBox layoutX="1134.0" layoutY="32.0" mnemonicParsing="false" text="Fighting" />
+            </RadioButton>
+            <RadioButton fx:id="T_Fighting" layoutX="1135.0" layoutY="32.0" mnemonicParsing="false" onAction="#FT_Fighting" prefHeight="16.0" prefWidth="74.0" text="Fighting" toggleGroup="$Type">
+               <font>
+                  <Font name="Gill Sans MT" size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="T_Water" layoutX="1018.0" layoutY="33.0" mnemonicParsing="false" onAction="#FT_Water" text="Water" toggleGroup="$Type">
+               <font>
+                  <Font name="Gill Sans MT" size="12.0" />
+               </font>
+            </RadioButton>
             <CheckBox fx:id="ID" layoutX="150.0" layoutY="24.0" mnemonicParsing="false" onAction="#SID" prefHeight="9.0" prefWidth="20.0" text="ID">
                <font>
                   <Font name="Gill Sans MT" size="10.0" />
@@ -102,7 +118,7 @@
             </CheckBox>
             <ScrollPane layoutX="14.0" layoutY="58.0" prefHeight="492.0" prefWidth="1200.0">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="489.0" prefWidth="1195.0" />
               </content>
             </ScrollPane>
          </children>
