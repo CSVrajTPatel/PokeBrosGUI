@@ -1,7 +1,7 @@
 # PokeBrosGUI
 Welcome to the PokeBros project. This project combines a Java backend and a JavaFX frontend to create an online virtual card collection and pack opening database.
 
-##Video Release 1.0
+## Video Release 1.0
 Checkout the [Pokebros 1.0 Video](https://youtu.be/EerzUHZcZaE/)
 ### Affiliated links
 Check out the [Prototype](https://csvrajtpatel.github.io/PokeBros/)
