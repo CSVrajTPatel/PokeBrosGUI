@@ -70,6 +70,12 @@ public class TabController implements Initializable{
         stage.close();
     }
 
+    @FXML
+    void claim(ActionEvent event) throws IOException {
+        Facade facade = Facade.getInstance();
+        facade.claimDailyCurrency();
+    }
+
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
         mainPane.getChildren().clear();

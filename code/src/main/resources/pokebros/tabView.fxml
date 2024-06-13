@@ -88,6 +88,12 @@
                   <Font name="Gill Sans MT Bold" size="12.0" />
                </font>
             </Button>
+            <Rectangle fill="#ffd300" height="27.0" layoutX="915.0" layoutY="38.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 55; -fx-arc-width: 55;" width="73.0" />
+            <Button fx:id="claimDaily" layoutX="915.0" layoutY="31.0" mnemonicParsing="false" onAction="#claim" prefHeight="41.0" prefWidth="73.0" style="-fx-background-color: transparent;" text="CLAIM" textAlignment="CENTER">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="12.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
    </children>

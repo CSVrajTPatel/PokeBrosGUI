@@ -1,14 +1,1 @@
-[
-    {
-      "cardsOffered": [
-        25
-      ],
-      "awaitingResponse": true,
-      "cardsRequested": 6,
-      "isFairTrade": false,
-      "wasAccepted": false,
-      "comment": "god i love you",
-      "senderUserName": "ThaneTiff",
-      "receiverUserName": "VrajTPatel"
-    }
-  ]
+[{"cardsOffered":[25],"awaitingResponse":true,"cardsRequested":6,"isFairTrade":false,"wasAccepted":false,"comment":"god i love you","senderUserName":"ThaneTiff","receiverUserName":"VrajTPatel"}]

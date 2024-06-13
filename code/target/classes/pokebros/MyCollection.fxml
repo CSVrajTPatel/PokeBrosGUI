@@ -20,7 +20,7 @@
                   <Font name="Gill Sans MT Bold" size="19.0" />
                </font>
             </Button>
-            <Button layoutX="43.0" layoutY="288.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="158.0" style="-fx-background-color: transparent;" text="Favorite Cards">
+            <Button layoutX="36.0" layoutY="288.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="172.0" style="-fx-background-color: transparent;" text="Favorite Cards">
                <font>
                   <Font name="Gill Sans MT Bold" size="19.0" />
                </font>
