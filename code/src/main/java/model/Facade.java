@@ -38,12 +38,12 @@ public class Facade {
     return master.searchByName(name);
   }
 
-  public ArrayList<Card> searchByType(String filter) {
+  public ArrayList<Card> searchByType(String filter, ArrayList<Card> filteredCards) {
     CardList master = CardList.getInstance();
     return master.searchByType(filter);
   }
 
-  public ArrayList<Card> searchByRarity(String filter) {
+  public ArrayList<Card> searchByRarity(String filter, ArrayList<Card> filteredCards) {
     CardList master = CardList.getInstance();
     return master.searchByRarity(filter);
   }
@@ -58,7 +58,7 @@ public class Facade {
   }
 
   public ArrayList<Card> getOwnedCards() {
-     return user.getOwnedCards();
+  return user.getOwnedCards();
   }
 
   public ArrayList<Card> getCardList() {
