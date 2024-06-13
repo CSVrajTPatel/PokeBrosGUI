@@ -4,7 +4,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
-import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 
 public class SearchCardsController {
@@ -60,8 +59,6 @@ public class SearchCardsController {
     @FXML
     private CheckBox Water;
 
-    @FXML
-    private ScrollPane serachCards;
 
     @FXML
     private Button switchMC1;
