@@ -19,5 +19,10 @@
             <Font name="Gill Sans MT Bold" size="19.0" />
          </font>
       </Button>
+      <Button fx:id="goBack" layoutX="49.0" layoutY="648.0" mnemonicParsing="false" onAction="#goBack" prefHeight="35.0" prefWidth="230.0" style="-fx-background-color: transparent;" text="GO BACK">
+         <font>
+            <Font name="Gill Sans MT Bold" size="19.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

@@ -3,7 +3,9 @@ package controllers;
 import java.io.IOException;
 import java.io.InputStream;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
@@ -11,11 +13,15 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import model.Card;
 import model.Facade;
+import pokebros.App;
 
 public class OpenPackController {
 
     @FXML
     private AnchorPane dispNewCards;
+
+    @FXML
+    private Button goBack;
 
     public void initialize() {
         Facade facade = Facade.getInstance();
@@ -59,6 +65,11 @@ public class OpenPackController {
 
         cardBox.getChildren().addAll(imageView);
         return cardBox;
+    }
+
+    @FXML
+    void goBack(ActionEvent event) throws IOException {
+        App.setRoot("tabView");
     }
 
 }
