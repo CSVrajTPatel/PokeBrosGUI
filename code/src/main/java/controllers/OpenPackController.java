@@ -45,8 +45,8 @@ public class OpenPackController {
 
         //Label name = new Label(card.getName());
         ImageView imageView = new ImageView();
-        imageView.setFitHeight(210);
-        imageView.setFitWidth(152);
+        imageView.setFitHeight(450);
+        imageView.setFitWidth(300);
 
         // Load image
         String imagePath = "/pokebros/Images/pokemon/" + card.getId() + ".png";
