@@ -273,14 +273,17 @@ public class SearchCardsController {
             filteredCards = facade.searchByName(query);
         }
 
+        // Refine by rarity if selected
         if (selectedRarity != null) {
             filteredCards = facade.searchByRarity(selectedRarity, filteredCards);
         }
 
+        // Further refine by type if selected
         if (selectedType != null) {
             filteredCards = facade.searchByType(selectedType, filteredCards);
         }
 
+        // Update the display with filtered cards
         DispFiltered.getChildren().clear();
         VBox container = new VBox(10);  // Vertical container for rows of cards
         HBox currentRow = new HBox(10);
