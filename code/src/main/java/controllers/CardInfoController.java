@@ -16,6 +16,9 @@ import pokebros.App;
 public class CardInfoController {
 
     @FXML
+    private Button AddFavCard;
+
+    @FXML
     private Text Attacks;
 
     @FXML
@@ -56,6 +59,7 @@ public class CardInfoController {
     public static void setSelectedCard(Card card) {
         selectedCard = card;
     }
+
 
     @FXML
     public void initialize() {
@@ -107,5 +111,11 @@ public class CardInfoController {
     void SwitchtoTrade(ActionEvent event) throws IOException {
         App.setRoot("Trade");
     }
+
+    @FXML
+    void AddFavCard(ActionEvent event) {
+
+    }
+    
 }
 

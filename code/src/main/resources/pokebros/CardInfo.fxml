@@ -27,7 +27,8 @@
             </ImageView>
             <Line endX="-125.8333740234375" endY="-41.16667175292969" layoutX="1351.0" layoutY="171.0" startX="-125.50001525878906" startY="-80.16666412353516" />
             <Label layoutX="1104.0" layoutY="23.0" />
-            <Button fx:id="BackToSearch" layoutX="289.0" layoutY="596.0" mnemonicParsing="false" onAction="#SwitchtoSearch" prefHeight="19.0" prefWidth="65.0" text="Back" textFill="RED">
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="DODGERBLUE" height="40.0" layoutX="289.0" layoutY="605.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="65.0" />
+            <Button fx:id="BackToSearch" layoutX="289.0" layoutY="612.0" mnemonicParsing="false" onAction="#SwitchtoSearch" prefHeight="19.0" prefWidth="65.0" style="-fx-background-color: transparent;" text="Back">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -82,7 +83,17 @@
                   <Font name="Gill Sans MT" size="25.0" />
                </font>
             </Text>
-            <Button fx:id="Trade" layoutX="889.0" layoutY="596.0" mnemonicParsing="false" onAction="#SwitchtoTrade" text="TRADE" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="DODGERBLUE" height="40.0" layoutX="876.0" layoutY="605.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="151.0" />
+            <Button fx:id="Trade" layoutX="876.0" layoutY="612.0" mnemonicParsing="false" onAction="#SwitchtoTrade" style="-fx-background-color: transparent;" text="TRADE(COMING SOON)">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="DODGERBLUE" height="40.0" layoutX="890.0" layoutY="111.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="151.0" />
+            <Button fx:id="AddFavCard" layoutX="901.0" layoutY="116.0" mnemonicParsing="false" onAction="#AddFavCard" prefHeight="22.0" prefWidth="129.0" style="-fx-background-color: transparent;" text="Favorite card">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="15.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
    </children>
