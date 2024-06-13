@@ -8,6 +8,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import model.Facade;
@@ -29,6 +30,12 @@ public class TabController implements Initializable{
 
     @FXML
     private Button logOut;
+
+    @FXML
+    private Label userName;
+
+    @FXML
+    private Label currency;
 
     @FXML
     void myCollection(ActionEvent event) {
@@ -74,11 +81,15 @@ public class TabController implements Initializable{
     void claim(ActionEvent event) throws IOException {
         Facade facade = Facade.getInstance();
         facade.claimDailyCurrency();
+        currency.setText(String.valueOf(facade.getCurrency()));
     }
 
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
         mainPane.getChildren().clear();
+        Facade facade = Facade.getInstance();
+        userName.setText(facade.getUserName());
+        currency.setText(String.valueOf(facade.getCurrency()));
         try {
             mainPane.getChildren().add(App.loadFXML("MyCollection"));
         } catch (IOException e) {
