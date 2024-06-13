@@ -2,6 +2,7 @@ package controllers;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -11,6 +12,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 import model.Card;
+import model.Facade;
 import pokebros.App;
 
 public class CardInfoController {
@@ -113,8 +115,17 @@ public class CardInfoController {
     }
 
     @FXML
-    void AddFavCard(ActionEvent event) {
-
+    void AddFavCard(ActionEvent event) throws IOException {
+        Facade facade = Facade.getInstance();
+        ArrayList<Card> favCards = facade.getFavoriteCards();
+        for (Card card : favCards) {
+            if (card == selectedCard) {
+                App.setRoot("tabView");
+                return;
+            }
+        }
+        facade.addFavoriteCard(selectedCard);
+        App.setRoot("tabView");
     }
     
 }
